@@ -1,0 +1,30 @@
+{
+	"FileVersion" : 3,
+	"Version" : 1,
+	"VersionName" : "1.0",
+	"FriendlyName" : "Cat Sound Library",
+	"Description" : "",
+	"Category" : "Animal Sounds",
+	"CreatedBy" : "King Arthur",
+	"CreatedByURL" : "",
+	"DocsURL" : "",
+	"MarketplaceURL" : "",
+	"SupportURL" : "",
+	"EngineVersion" : "4.16.0",
+	"CanContainContent" : true,
+	"IsBetaVersion" : true,
+	"Installed" : true,
+	"RequiresBuildPlatform" : false,
+	"Modules" :
+	[
+		{
+			"Name" : "CatSound",
+			"Type" : "Runtime",
+			"WhitelistPlatforms" :
+			[
+				"Win64",
+				"Win32",
+			]
+		}
+	]
+}
