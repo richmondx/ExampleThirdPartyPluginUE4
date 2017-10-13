@@ -1,0 +1,61 @@
+////////////////////////////////////////////////
+//1 - Basic .uplugin code
+////////////////////////////////////////////////
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "CatsMeow",
+	"Description": "Get the sound of a cat",
+	"Category": "Other",
+	"CreatedBy": "King Arthur",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "CatsMeow",
+			"Type": "Developer",
+			"LoadingPhase": "Default"
+		}
+	]
+}
+
+
+////////////////////////////////////////////////
+//2 - Modified .uplugin code
+////////////////////////////////////////////////
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "CatsMeow",
+	"Description": "Get the sound of a cat",
+	"Category": "Other",
+	"CreatedBy": "King Arthur",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "CatsMeow",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"WhitelistPlatforms" :
+			[
+				"Win64",
+				"Win32",
+			]
+		}
+	]
+}
+
+
