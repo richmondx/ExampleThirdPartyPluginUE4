@@ -1,1 +1,1 @@
-# ExampleThirdPartypluginUE4
+# ExampleThirdPartyPluginUE4

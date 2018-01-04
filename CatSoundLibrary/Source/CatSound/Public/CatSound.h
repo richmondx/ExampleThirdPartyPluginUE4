@@ -1,11 +1,8 @@
 // Copyright 1998-2017 Epic Games, Inc. All Rights Reserved.
-
 #pragma once
-
 #include "ModuleManager.h"
-#include "CatSoundLibrary.h"
 
-class FCatSoundModule : public IModuleInterface
+class ICatSoundModule : public IModuleInterface
 {
 public:
 	/**
@@ -14,9 +11,9 @@ public:
 	*
 	* @return Returns singleton instance, loading the module on demand if needed
 	*/
-	static inline FCatSoundModule& Get()
+	static inline ICatSoundModule& Get()
 	{
-		return FModuleManager::LoadModuleChecked< FCatSoundModule >("Module");
+		return FModuleManager::LoadModuleChecked<ICatSoundModule>("CatSound");
 	}
 
 	/**
@@ -26,18 +23,9 @@ public:
 	*/
 	static inline bool IsAvailable()
 	{
-		return FModuleManager::Get().IsModuleLoaded("Module");
+		return FModuleManager::Get().IsModuleLoaded("CatSound");
 	}
 
-	/** IModuleInterface implementation */
-	virtual void StartupModule() override;
-	virtual void ShutdownModule() override;
-
-	static inline FString GetTheCatSound()
-	{
-		//UE_LOG(LogTemp, Log, TEXT("Gaze Location: %f %f"), GazePoint.X, GazePoint.Y);
-		return FString(GetCatSound());
-	}
-private:
-	void*	LibHandle;
+	/** Interface to CatSoundLibrary */
+	virtual FString GetCatSound() const = 0;
 };

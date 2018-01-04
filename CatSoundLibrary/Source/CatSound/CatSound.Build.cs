@@ -10,40 +10,25 @@ namespace UnrealBuildTool.Rules
 		{
 			PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
 			
-			PublicIncludePaths.AddRange(
-				new string[] {
-					"CatSound/Public",
-					// ... add public include paths required here ...
-				}
-				);
-					
-			
 			PrivateIncludePaths.AddRange(
 				new string[] {
 					"CatSound/Private",
-					// ... add other private include paths required here ...
 				});
 				
 			
 			PublicDependencyModuleNames.AddRange(
-				new string[]
-				{
+				new string[] {
 					"Core",
-					"Projects",
-
-					// ... add other public dependencies that you statically link with here ...
 				});
-				
 			
 			PrivateDependencyModuleNames.AddRange(
-				new string[]
-				{
+				new string[] {
 					"CoreUObject",
+					"Projects",
 					"Engine",
 					"Slate",
-					"SlateCore",// ... add private dependencies that you statically link with here ...	
+					"SlateCore",
 				});
-			
 			
 			DynamicallyLoadedModuleNames.AddRange(
 				new string[]
