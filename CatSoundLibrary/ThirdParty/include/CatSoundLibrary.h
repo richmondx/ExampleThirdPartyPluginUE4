@@ -6,5 +6,6 @@
 #define CATSOUNDLIBRARY_API __declspec(dllimport)   
 #endif  
 
-
-extern "C" CATSOUNDLIBRARY_API char* GetCatSound();
+namespace CatSoundLibrary {
+	extern "C" CATSOUNDLIBRARY_API char* GetCatSound();
+}
